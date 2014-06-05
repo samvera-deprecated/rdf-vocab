@@ -1,4 +1,4 @@
 rdf-vocab
 =========
 
-Shared RDF Vocabularies
+A library of RDF vocabularies and tools based on ruby-rdf.
