@@ -22,6 +22,14 @@
 #   loader.output = <File: "lib/rdf-vocab/vocab/premis.rb">
 #   loader.run
 #
+mads:
+  class_name: MADS
+  uri: http://www.loc.gov/mads/rdf/v1#
+  source: http://www.loc.gov/standards/mads/rdf/v1.rdf
+mods:
+  class_name: MODS
+  uri: http://www.loc.gov/mods/rdf/v1#
+  source: http://www.loc.gov/standards/mods/modsrdf/v1/modsrdf.owl
 premis:
   class_name: PREMIS
   uri: http://www.loc.gov/premis/rdf/v1#

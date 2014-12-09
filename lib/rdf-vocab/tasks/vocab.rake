@@ -1,19 +1,15 @@
-require "rdf/cli/vocab-loader"
-require "yaml"
+require "rdf-vocab"
 
-namespace :vocab do
-  desc "(Re-)Generate RDF vocabularies"
-  task :generate do
-    config = YAML.load_file(File.expand_path("../../config/vocab.yml", __FILE__))
-    config.each do |prefix, params|
-      loader = RDF::VocabularyLoader.new
-      params.each do |param, value|
-        loader.send("#{param}=", value)
-      end
-      outfile = File.expand_path("../../vocab/#{prefix}.rb", __FILE__)
-      File.open(outfile, "wb") do |output|
-        loader.output = output
-        loader.run
+namespace :vocab do  
+  RDF::Vocab.config.keys.sort.each do |vocab|
+    desc "Generate \"#{vocab}\" vocabulary from source (`output' = file path)"
+    task vocab do
+      if outfile = ENV["output"]
+        File.open(outfile, "wb") do |output|
+          RDF::Vocab.generate(vocab, output)
+        end
+      else
+        RDF::Vocab.generate(vocab)
       end
     end
   end
