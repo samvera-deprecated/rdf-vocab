@@ -7,9 +7,9 @@ See the list of rake tasks in the `vocab` namespace for specific vocabulary gene
 
 ## Vocabularies
 
-- MADS
-- MARC Relators
-- MODS
-- PREMIS
-- LoC Preservation Vocabs:
-  - Event Type
+- RDF::LDP
+- RDF::MADS
+- RDF::MARC_RELATORS
+- RDF::MODS
+- RDF::PREMIS::V1
+- RDF::PremisEventType (LoC)
