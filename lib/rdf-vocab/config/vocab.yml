@@ -23,6 +23,10 @@
 #   loader.source = "http://www.loc.gov/premis/rdf/v1.rdf"
 #   loader.run
 #
+ldp:
+  class_name: LDP
+  uri: http://www.w3.org/ns/ldp#
+  source: http://www.w3.org/ns/ldp
 mads:
   class_name: MADS
   uri: http://www.loc.gov/mads/rdf/v1#
