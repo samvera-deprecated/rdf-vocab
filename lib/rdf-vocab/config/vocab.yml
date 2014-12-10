@@ -1,10 +1,8 @@
 #
 # Vocabulary generator config
 #
-# Outer keys are module file name prefixes -- e.g., "premis" => lib/rdf-vocab/vocab/premis.rb
-#
 # The value of each outer key consists of attribute names and values for the RDF::VocabularyLoader
-# instance created to generate each vocabulary.
+# instance created to generate that vocabulary by `RDF::Vocab.generate`.
 #
 # Example:
 #
@@ -13,13 +11,12 @@
 #     uri: http://www.loc.gov/premis/rdf/v1#
 #     source: http://www.loc.gov/premis/rdf/v1.rdf
 #
-# will create and run an instance of RDF::VocabularyLoader
+#   RDF::Vocab.generate("premis") will create and run an instance of RDF::VocabularyLoader like so:
 #  
 #   loader = RDF::VocabularyLoader.new
 #   loader.class_name = "PREMIS"
 #   loader.uri = "http://www.loc.gov/premis/rdf/v1#"
 #   loader.source = "http://www.loc.gov/premis/rdf/v1.rdf"
-#   loader.output = <File: "lib/rdf-vocab/vocab/premis.rb">
 #   loader.run
 #
 mads:
@@ -34,3 +31,7 @@ premis:
   class_name: PREMIS
   uri: http://www.loc.gov/premis/rdf/v1#
   source: http://www.loc.gov/premis/rdf/v1.rdf
+marc_relators:
+  class_name: MARC_RELATORS
+  uri: http://id.loc.gov/vocabulary/relators/
+  source: http://id.loc.gov/vocabulary/relators.nt
