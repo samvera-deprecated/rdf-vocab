@@ -1,8 +1,8 @@
 # -*- encoding: utf-8 -*-
 # This file generated automatically using vocab-fetch from http://www.loc.gov/premis/rdf/v1.rdf
 require 'rdf'
-module RDF
-  class PREMIS < RDF::StrictVocabulary("http://www.loc.gov/premis/rdf/v1#")
+module RDF::PREMIS
+  class V1 < RDF::StrictVocabulary("http://www.loc.gov/premis/rdf/v1#")
 
     # Class definitions
     term :Agent,
