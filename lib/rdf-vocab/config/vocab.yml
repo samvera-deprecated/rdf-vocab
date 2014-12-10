@@ -1,27 +1,32 @@
 #
 # Vocabulary generator config
 #
-# Outer keys are module file name prefixes -- e.g., "premis" => lib/rdf-vocab/vocab/premis.rb
-#
 # The value of each outer key consists of attribute names and values for the RDF::VocabularyLoader
-# instance created to generate each vocabulary.
+# instance created to generate that vocabulary by `RDF::Vocab.generate`.
 #
 # Example:
 #
 #   premis:
-#	  module_name: RDF::PREMIS
+#     module_name: RDF::PREMIS
 #     class_name: V1
 #     uri: http://www.loc.gov/premis/rdf/v1#
 #     source: http://www.loc.gov/premis/rdf/v1.rdf
 #
-# will create and run an instance of RDF::VocabularyLoader
+#   RDF::Vocab.generate("premis") will create and run an instance of RDF::VocabularyLoader like so:
 #  
 #   loader = RDF::VocabularyLoader.new
-#	loader.module_name = "RDF::PREMIS"
+#   loader.module_name = "RDF::PREMIS"
 #   loader.class_name = "V1
 #   loader.uri = "http://www.loc.gov/premis/rdf/v1#"
 #   loader.source = "http://www.loc.gov/premis/rdf/v1.rdf"
 #   loader.run
+#
+#   while will generate the vocabulary:
+#
+#   module RDF::PREMIS
+#     class V1 < StrictVocabulary("http://www.loc.gov/premis/rdf/v1#")
+#
+#     [...]
 #
 ldp:
   class_name: LDP
@@ -31,6 +36,10 @@ mads:
   class_name: MADS
   uri: http://www.loc.gov/mads/rdf/v1#
   source: http://www.loc.gov/standards/mads/rdf/v1.rdf
+marc_relators:
+  class_name: MARC_RELATORS
+  uri: http://id.loc.gov/vocabulary/relators/
+  source: http://id.loc.gov/vocabulary/relators.nt
 mods:
   class_name: MODS
   uri: http://www.loc.gov/mods/rdf/v1#
