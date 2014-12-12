@@ -1,30 +1,30 @@
 #
 # Vocabulary generator config
 #
-# The value of each outer key consists of attribute names and values for the RDF::VocabularyLoader
+# The value of each outer key consists of attribute names and values for the `RDF::VocabularyLoader`
 # instance created to generate that vocabulary by `RDF::Vocab.generate`.
+#
+# Note that "module_name" defaults to "RDF::Vocab" (instead of "RDF" as with `RDF::VocabularyLoader`).
 #
 # Example:
 #
-#   premis:
-#     module_name: RDF::PREMIS
-#     class_name: V1
-#     uri: http://www.loc.gov/premis/rdf/v1#
-#     source: http://www.loc.gov/premis/rdf/v1.rdf
+#   mods:
+#     class_name: MODS
+#     uri: http://www.loc.gov/mods/rdf/v1#
+#     source: http://www.loc.gov/standards/mods/modsrdf/v1/modsrdf.owl
 #
-#   RDF::Vocab.generate("premis") will create and run an instance of RDF::VocabularyLoader like so:
+#   RDF::Vocab.generate("mods") will create and run an instance of RDF::VocabularyLoader like so:
 #  
 #   loader = RDF::VocabularyLoader.new
-#   loader.module_name = "RDF::PREMIS"
-#   loader.class_name = "V1
-#   loader.uri = "http://www.loc.gov/premis/rdf/v1#"
-#   loader.source = "http://www.loc.gov/premis/rdf/v1.rdf"
-#   loader.run
+#   loader.module_name = "RDF::Vocab"
+#   loader.class_name = "MODS"
+#   loader.uri = "http://www.loc.gov/mods/rdf/v1#"
+#   loader.source = "http://www.loc.gov/standards/mods/modsrdf/v1/modsrdf.owl"
 #
-#   while will generate the vocabulary:
+#   which will generate the vocabulary:
 #
-#   module RDF::PREMIS
-#     class V1 < StrictVocabulary("http://www.loc.gov/premis/rdf/v1#")
+#   module RDF::Vocab
+#     class MODS < StrictVocabulary("http://www.loc.gov/mods/rdf/v1#")
 #
 #     [...]
 #
@@ -37,7 +37,7 @@ mads:
   uri: http://www.loc.gov/mads/rdf/v1#
   source: http://www.loc.gov/standards/mads/rdf/v1.rdf
 marc_relators:
-  class_name: MARC_RELATORS
+  class_name: MARCRelators
   uri: http://id.loc.gov/vocabulary/relators/
   source: http://id.loc.gov/vocabulary/relators.nt
 mods:
@@ -45,7 +45,7 @@ mods:
   uri: http://www.loc.gov/mods/rdf/v1#
   source: http://www.loc.gov/standards/mods/modsrdf/v1/modsrdf.owl
 premis_v1:
-  module_name: RDF::PREMIS
+  module_name: RDF::Vocab::PREMIS
   class_name: V1
   uri: http://www.loc.gov/premis/rdf/v1#
   source: http://www.loc.gov/premis/rdf/v1.rdf

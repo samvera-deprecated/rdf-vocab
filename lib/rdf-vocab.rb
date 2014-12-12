@@ -10,6 +10,7 @@ module RDF
 
     def self.generate(vocab, output=nil)
       loader = RDF::VocabularyLoader.new
+      loader.module_name = "RDF::Vocab" unless config[vocab]["module_name"]
       config[vocab].each do |param, value|
         loader.send("#{param}=", value)
       end

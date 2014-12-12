@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 # This file generated automatically using vocab-fetch from http://www.w3.org/ns/ldp
 require 'rdf'
-module RDF
+module RDF::Vocab
   class LDP < RDF::StrictVocabulary("http://www.w3.org/ns/ldp#")
 
     # Class definitions

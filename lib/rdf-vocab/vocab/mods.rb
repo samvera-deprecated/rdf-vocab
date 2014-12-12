@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 # This file generated automatically using vocab-fetch from http://www.loc.gov/standards/mods/modsrdf/v1/modsrdf.owl
 require 'rdf'
-module RDF
+module RDF::Vocab
   class MODS < RDF::StrictVocabulary("http://www.loc.gov/mods/rdf/v1#")
 
     # Class definitions
@@ -222,7 +222,7 @@ The resource which is the subject of this description.
       comment: %(The genre \(or one of several genres\) of the resource. Represented in the MADS namespace. ).freeze,
       domain: "http://www.loc.gov/mods/rdf/v1#ModsResource".freeze,
       label: "Genre".freeze,
-      range: "http://www.loc.gov/mads/rdf/v1#GenreForm".freeze,
+      range: "mads:GenreForm".freeze,
       type: "owl:ObjectProperty".freeze
     property :identifier,
       comment: %(identifier is a property for which all terms in the "identifier" vocabulary become subproperties.  Thus for example 'identifer:isbn' is a subproperty saying in effect "has this ISBN" where 'isbn' is a term within that vocabulary. \(The prefix 'identifier:' is used to denote the namespace for the "identifier" vocabulary.).freeze,
@@ -363,13 +363,13 @@ The resource which is the subject of this description.
       comment: %(A name  - personal, corporate, conference, or family - associated with the resource. Represented in the MADS namespace. ).freeze,
       domain: "http://www.loc.gov/mods/rdf/v1#ModsResource".freeze,
       label: "Name".freeze,
-      range: "http://www.loc.gov/mads/rdf/v1#Name".freeze,
+      range: "mads:Name".freeze,
       type: "owl:ObjectProperty".freeze
     property :namePrincipal,
       comment: %(A name that has been distinguished as the principal name associated with the resource. There should be no more than one name principal name. \(The rule for determining the principal name is as follows: If the role associated with the name is 'creator' AND if it is the only name whose role is 'creator' then it is the principal name. Thus if there are more than one name, or no name, whose role is 'creator', then there is no principal name.\) If there is a principal name, and if there is a uniform title, then that name and title are to be combined into a nameTitle. ).freeze,
       domain: "http://www.loc.gov/mods/rdf/v1#ModsResource".freeze,
       label: "Name -  Principle".freeze,
-      range: "http://www.loc.gov/mads/rdf/v1#Name".freeze,
+      range: "mads:Name".freeze,
       subPropertyOf: "http://www.loc.gov/mods/rdf/v1#name".freeze,
       type: "owl:ObjectProperty".freeze
     property :note,
@@ -490,13 +490,13 @@ The resource which is the subject of this description.
       comment: %(Place of publication/origin. Used in connection with the origin of a resource, i.e., creation, publication, issuance, etc.  Represented as a MADS Geographic.).freeze,
       domain: "http://www.loc.gov/mods/rdf/v1#ModsResource".freeze,
       label: "Place".freeze,
-      range: "http://www.loc.gov/mads/rdf/v1#Geographic".freeze,
+      range: "mads:Geographic".freeze,
       type: "owl:ObjectProperty".freeze
     property :publisher,
       comment: %(The name of the entity that published, printed, distributed, released, issued, or produced the resource.).freeze,
       domain: "http://www.loc.gov/mods/rdf/v1#ModsResource".freeze,
       label: "Publisher".freeze,
-      range: "http://www.loc.gov/mads/rdf/v1#Name".freeze,
+      range: "mads:Name".freeze,
       type: "owl:ObjectProperty".freeze
     property :recordContentSource,
       comment: %(The code or name of the organization that either created the original description or modified it.).freeze,
@@ -623,7 +623,7 @@ The resource which is the subject of this description.
 The property 'relator:artist' relates the resource to an artist associated with the resource, represented as a mads name.).freeze,
       domain: "http://www.loc.gov/mods/rdf/v1#ModsResource".freeze,
       label: "Role (unbound)".freeze,
-      "owl:equivalentProperty" => %(http://id.loc.gov/vocabulary/relators/role).freeze,
+      "owl:equivalentProperty" => %(marc_relators:role).freeze,
       type: "owl:ObjectProperty".freeze
     property :roleRelationship,
       comment: %(Binds a name to the role that the named entity played for the resource. ).freeze,
@@ -635,7 +635,7 @@ The property 'relator:artist' relates the resource to an artist associated with 
       comment: %(The name included in a roleRelationship.  The roleRelationship binds an name and a role, where the name is a name associated with the resource and is specified elsewhere via the hasName property.  This mechanism is used when the role is not part of a known vocabulary.  Otherwise, the relationship is expressed by using the role vocabulary term as the property; for example, see relator:creator.).freeze,
       domain: "http://www.loc.gov/mods/rdf/v1#RoleRelationship".freeze,
       label: "Role Relationship - Name".freeze,
-      range: "http://www.loc.gov/mads/rdf/v1#Name".freeze,
+      range: "mads:Name".freeze,
       type: "owl:ObjectProperty".freeze
     property :roleRelationshipRole,
       comment: %(The role associated with a name, where the name and role are bound together in a roleRelationship.).freeze,
@@ -658,70 +658,70 @@ The property 'relator:artist' relates the resource to an artist associated with 
       comment: %(A subject of the resource composed of several component subjects. ).freeze,
       domain: "http://www.loc.gov/mods/rdf/v1#ModsResource".freeze,
       label: "Subject - Complex".freeze,
-      range: "http://www.loc.gov/mads/rdf/v1#ComplexSubject".freeze,
+      range: "mads:ComplexSubject".freeze,
       subPropertyOf: "http://www.loc.gov/mods/rdf/v1#subject".freeze,
       type: "owl:ObjectProperty".freeze
     property :subjectGenre,
       comment: %(A subject of the resource which is a genre, expressed in terms of a MADS GenreForm.).freeze,
       domain: "http://www.loc.gov/mods/rdf/v1#ModsResource".freeze,
       label: "Subject - Genre Subject".freeze,
-      range: "http://www.loc.gov/mads/rdf/v1#GenreForm".freeze,
+      range: "mads:GenreForm".freeze,
       subPropertyOf: "http://www.loc.gov/mods/rdf/v1#subject".freeze,
       type: "owl:ObjectProperty".freeze
     property :subjectGeographic,
       comment: %(A subject of the resource which is a geographic entity, expressed in terms of a MADS Geographic.).freeze,
       domain: "http://www.loc.gov/mods/rdf/v1#ModsResource".freeze,
       label: "Subject - Geographic ".freeze,
-      range: "http://www.loc.gov/mads/rdf/v1#Geographic".freeze,
+      range: "mads:Geographic".freeze,
       subPropertyOf: "http://www.loc.gov/mods/rdf/v1#subject".freeze,
       type: "owl:ObjectProperty".freeze
     property :subjectGeographicCode,
       comment: %(A subject of the resource which is a geographic entity, expressed as a geographic code and in terms of a MADS Geographic.).freeze,
       domain: "http://www.loc.gov/mods/rdf/v1#ModsResource".freeze,
       label: "Subject - Geographic Code ".freeze,
-      range: "http://www.loc.gov/mads/rdf/v1#Geographic".freeze,
+      range: "mads:Geographic".freeze,
       subPropertyOf: "http://www.loc.gov/mods/rdf/v1#subjectGeographic".freeze,
       type: "owl:ObjectProperty".freeze
     property :subjectHierarchicalGeographic,
       comment: %(A subject of the resource which is a hierarchy of geographic entities expressed in terms of a MADS Geographics.).freeze,
       domain: "http://www.loc.gov/mods/rdf/v1#ModsResource".freeze,
       label: "Subject -  Hierarchical Geographic ".freeze,
-      range: "http://www.loc.gov/mads/rdf/v1#HierarchicalGeographic".freeze,
+      range: "mads:HierarchicalGeographic".freeze,
       subPropertyOf: "http://www.loc.gov/mods/rdf/v1#subject".freeze,
       type: "owl:ObjectProperty".freeze
     property :subjectName,
       comment: %(A subject of the resource which is a name, expressed in terms of a MADS Name.).freeze,
       domain: "http://www.loc.gov/mods/rdf/v1#ModsResource".freeze,
       label: "Subject - Name Subject".freeze,
-      range: "http://www.loc.gov/mads/rdf/v1#Name".freeze,
+      range: "mads:Name".freeze,
       subPropertyOf: "http://www.loc.gov/mods/rdf/v1#subject".freeze,
       type: "owl:ObjectProperty".freeze
     property :subjectOccupation,
       comment: %(A subject of the resource which is an occupation, expressed in terms of a MADS Occupation.).freeze,
       domain: "http://www.loc.gov/mods/rdf/v1#ModsResource".freeze,
       label: "Subject - Occupation".freeze,
-      range: "http://www.loc.gov/mads/rdf/v1#Occupation".freeze,
+      range: "mads:Occupation".freeze,
       subPropertyOf: "http://www.loc.gov/mods/rdf/v1#subject".freeze,
       type: "owl:ObjectProperty".freeze
     property :subjectTemporal,
       comment: %(A subject of the resource which is a temporal expression, expressed in terms of a MADS Temporal.).freeze,
       domain: "http://www.loc.gov/mods/rdf/v1#ModsResource".freeze,
       label: "Subject - Temporal".freeze,
-      range: "http://www.loc.gov/mads/rdf/v1#Temporal".freeze,
+      range: "mads:Temporal".freeze,
       subPropertyOf: "http://www.loc.gov/mods/rdf/v1#subject".freeze,
       type: "owl:ObjectProperty".freeze
     property :subjectTitle,
       comment: %(A subject of the resource which is a title, expressed in terms of a MADS Title.).freeze,
       domain: "http://www.loc.gov/mods/rdf/v1#ModsResource".freeze,
       label: "Subject - Title".freeze,
-      range: "http://www.loc.gov/mads/rdf/v1#Title".freeze,
+      range: "mads:Title".freeze,
       subPropertyOf: "http://www.loc.gov/mods/rdf/v1#subject".freeze,
       type: "owl:ObjectProperty".freeze
     property :subjectTopic,
       comment: %(A subject of the resource which is a topic, expressed in terms of a MADS Topic.).freeze,
       domain: "http://www.loc.gov/mods/rdf/v1#ModsResource".freeze,
       label: "Subject - Topic".freeze,
-      range: "http://www.loc.gov/mads/rdf/v1#Topic".freeze,
+      range: "mads:Topic".freeze,
       subPropertyOf: "http://www.loc.gov/mods/rdf/v1#subject".freeze,
       type: "owl:ObjectProperty".freeze
     property :tableOfContents,
@@ -740,20 +740,20 @@ The property 'relator:artist' relates the resource to an artist associated with 
       comment: %(A title for the resource. Represented as a MADS Title.).freeze,
       domain: "http://www.loc.gov/mods/rdf/v1#ModsResource".freeze,
       label: "Title".freeze,
-      range: "http://www.loc.gov/mads/rdf/v1#Title".freeze,
+      range: "mads:Title".freeze,
       type: "owl:ObjectProperty".freeze
     property :titlePrincipal,
       comment: %(A title which has been distinguished as the principal  title. \(This corresponds to a MODS XML titleInfo with  no type attribute.\) There should be no more than one principal title. Represented as a MADS Title.).freeze,
       domain: "http://www.loc.gov/mods/rdf/v1#ModsResource".freeze,
       label: "Title - Principal".freeze,
-      range: "http://www.loc.gov/mads/rdf/v1#Title".freeze,
+      range: "mads:Title".freeze,
       subPropertyOf: "http://www.loc.gov/mods/rdf/v1#title".freeze,
       type: "owl:ObjectProperty".freeze
     property :titleUniform,
       comment: %(A title which has been distinguished as a uniform title. \(This corresponds to a MODS XML titleInfo with 'type=uniform' attribute.\) There should be no more than one uniform title.  Represented as a MADS Title, or, if there is a primary name, it is represented as a MADS NameTitle.  ).freeze,
       domain: "http://www.loc.gov/mods/rdf/v1#ModsResource".freeze,
       label: "Title - Uniform".freeze,
-      range: "http://www.loc.gov/mads/rdf/v1#Title".freeze,
+      range: "mads:Title".freeze,
       subPropertyOf: "http://www.loc.gov/mods/rdf/v1#title".freeze,
       type: "owl:ObjectProperty".freeze
 

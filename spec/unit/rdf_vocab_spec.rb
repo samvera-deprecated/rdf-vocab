@@ -17,10 +17,10 @@ RSpec.describe RDF::Vocab do
         eval(strio.read)
       end
     end
-    after { RDF.send(:remove_const, :Test) }
+    after { RDF::Vocab.send(:remove_const, :Test) }
     it "should generate the vocabulary based on the config" do
-      expect(RDF::Test < ::RDF::StrictVocabulary("http://purl.org/dc/terms/")).to be true
-      expect(RDF::Test.creator).to be_a(RDF::Term)
+      expect(RDF::Vocab::Test < ::RDF::StrictVocabulary("http://purl.org/dc/terms/")).to be true
+      expect(RDF::Vocab::Test.creator).to be_a(RDF::Term)
     end
   end
 
