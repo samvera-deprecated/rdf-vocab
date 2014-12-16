@@ -14,7 +14,7 @@
 #     source: http://www.loc.gov/standards/mods/modsrdf/v1/modsrdf.owl
 #
 #   RDF::Vocab.generate("mods") will create and run an instance of RDF::VocabularyLoader like so:
-#  
+#
 #   loader = RDF::VocabularyLoader.new
 #   loader.module_name = "RDF::Vocab"
 #   loader.class_name = "MODS"
@@ -28,6 +28,10 @@
 #
 #     [...]
 #
+acl:
+  class_name: ACL
+  uri: http://www.w3.org/ns/auth/acl#
+  source: http://www.w3.org/ns/auth/acl
 identifiers:
   class_name: Identifiers
   uri: http://id.loc.gov/vocabulary/identifiers/
