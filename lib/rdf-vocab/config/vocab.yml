@@ -28,6 +28,10 @@
 #
 #     [...]
 #
+acl:
+  class_name: ACL
+  uri: http://www.w3.org/ns/auth/acl#
+  source: http://www.w3.org/ns/auth/acl
 ldp:
   class_name: LDP
   uri: http://www.w3.org/ns/ldp#
