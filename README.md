@@ -10,6 +10,7 @@ See the list of rake tasks in the `vocab` namespace for specific vocabulary gene
 
 ## Vocabularies
 
+- RDF::Vocab::ACL - [Web Access Control](http://www.w3.org/wiki/WebAccessControl) (W3C)
 - RDF::Vocab::Identifiers - [Standard Identifiers Scheme](http://id.loc.gov/vocabulary/identifiers.html) (LoC)
 - RDF::Vocab::LDP - [Linked Data Platform](http://www.w3.org/TR/ldp/) (W3C)
 - RDF::Vocab::MADS - [Metadata Authority Description Schema](http://www.loc.gov/standards/mads/) (LoC) 
