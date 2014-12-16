@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = RDF::Vocab::VERSION
   spec.authors       = ["David Chandek-Stark"]
   spec.email         = ["dchandekstark@gmail.com"]
-  spec.summary       = %q{A library of RDF vocabularies and vocabulary-building tools}
-  spec.description   = %q{A library of RDF vocabularies and vocabulary-building tools}
+  spec.summary       = %q{A library of RDF vocabularies and vocabulary-generating tools}
+  spec.description   = %q{A library of RDF vocabularies and vocabulary-generating tools}
   spec.homepage      = "https://github.com/projecthydra-labs/rdf-vocab"
   spec.license       = "APACHE2"
 
