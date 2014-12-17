@@ -11,6 +11,7 @@ See the list of rake tasks in the `vocab` namespace for specific vocabulary gene
 ## Vocabularies
 
 - RDF::Vocab::ACL - [Web Access Control](http://www.w3.org/wiki/WebAccessControl) (W3C)
+- RDF::Vocab::Fcrepo3 (module) - [Fedora Commons Repository 3](https://github.com/fcrepo3)*
 - RDF::Vocab::Identifiers - [Standard Identifiers Scheme](http://id.loc.gov/vocabulary/identifiers.html) (LoC)
 - RDF::Vocab::LDP - [Linked Data Platform](http://www.w3.org/TR/ldp/) (W3C)
 - RDF::Vocab::MADS - [Metadata Authority Description Schema](http://www.loc.gov/standards/mads/) (LoC) 
@@ -18,6 +19,8 @@ See the list of rake tasks in the `vocab` namespace for specific vocabulary gene
 - RDF::Vocab::MODS - [Metadata Object Description Schema](http://www.loc.gov/standards/mods/) (LoC)
 - RDF::Vocab::PREMIS::V1 - [Preservation Metadata Implementation Strategies (PREMIS) Ontology](http://id.loc.gov/ontologies/premis.html) (LoC)
 - RDF::Vocab::PremisEventType - [PREMIS Event Type](http://id.loc.gov/vocabulary/preservation/eventType.html) (LoC)
+
+* The Fcrepo3 module was extracted from [ActiveFedora](https://github.com/projecthydra/active_fedora), so does not have a generator task.
 
 ## Installation
 
