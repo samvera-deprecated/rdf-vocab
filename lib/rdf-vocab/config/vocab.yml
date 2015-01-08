@@ -32,6 +32,10 @@ acl:
   class_name: ACL
   uri: http://www.w3.org/ns/auth/acl#
   source: http://www.w3.org/ns/auth/acl
+fcrepo4:
+  class_name: Fcrepo4
+  uri: http://fedora.info/definitions/v4/repository#
+  source: http://fedora.info/definitions/v4/2015/02/04/repository
 identifiers:
   class_name: Identifiers
   uri: http://id.loc.gov/vocabulary/identifiers/
