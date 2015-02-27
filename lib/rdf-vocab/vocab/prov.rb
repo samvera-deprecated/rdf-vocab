@@ -1,8 +1,8 @@
 # -*- encoding: utf-8 -*-
 # This file generated automatically using vocab-fetch from http://www.w3.org/ns/prov
 require 'rdf'
-module PROV
-  class  < RDF::StrictVocabulary("http://www.w3.org/ns/prov#")
+module RDF::Vocab
+  class PROV < RDF::StrictVocabulary("http://www.w3.org/ns/prov#")
 
     # Class definitions
     term :Accept,

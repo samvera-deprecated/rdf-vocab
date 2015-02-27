@@ -70,6 +70,6 @@ premis_event_type:
   uri: http://id.loc.gov/vocabulary/preservation/eventType/
   source: http://id.loc.gov/vocabulary/preservation/eventType.nt
 prov:
-  module_name: PROV
+  class_name: PROV
   uri: http://www.w3.org/ns/prov#
   source: http://www.w3.org/ns/prov
