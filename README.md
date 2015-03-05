@@ -12,13 +12,16 @@ See the list of rake tasks in the `vocab` namespace for specific vocabulary gene
 
 - RDF::Vocab::ACL - [Web Access Control](http://www.w3.org/wiki/WebAccessControl) (W3C)
 - RDF::Vocab::Fcrepo3 (module) - [Fedora Commons Repository 3](https://github.com/fcrepo3)*
+- RDF::Vocab::Fcrepo4 - [Fedora Commons Repository 4 Ontology](http://fedora.info/definitions/v4/repository)
 - RDF::Vocab::Identifiers - [Standard Identifiers Scheme](http://id.loc.gov/vocabulary/identifiers.html) (LoC)
 - RDF::Vocab::LDP - [Linked Data Platform](http://www.w3.org/TR/ldp/) (W3C)
 - RDF::Vocab::MADS - [Metadata Authority Description Schema](http://www.loc.gov/standards/mads/) (LoC) 
 - RDF::Vocab::MARCRelators - [MARC Code List for Relators](http://id.loc.gov/vocabulary/relators.html) (LoC)
 - RDF::Vocab::MODS - [Metadata Object Description Schema](http://www.loc.gov/standards/mods/) (LoC)
+- RDF::Vocab::ORE - [Object Reuse and Exchange Ontology](http://www.openarchives.org/ore/1.0/rdfxml) (OAI)
 - RDF::Vocab::PREMIS::V1 - [Preservation Metadata Implementation Strategies (PREMIS) Ontology](http://id.loc.gov/ontologies/premis.html) (LoC)
 - RDF::Vocab::PremisEventType - [PREMIS Event Type](http://id.loc.gov/vocabulary/preservation/eventType.html) (LoC)
+- RDF::Vocab::PROV - [PROV Ontology](http://www.w3.org/TR/prov-o/) (W3C)
 
 * The Fcrepo3 module was extracted from [ActiveFedora](https://github.com/projecthydra/active_fedora), so does not have a generator task.
 
