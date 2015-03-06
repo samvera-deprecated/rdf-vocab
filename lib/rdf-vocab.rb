@@ -12,7 +12,8 @@ module RDF
       loader = RDF::VocabularyLoader.new
       loader.module_name = "RDF::Vocab" unless config[vocab]["module_name"]
       config[vocab].each do |param, value|
-        loader.send("#{param}=", value)
+        writer = "#{param}="
+        loader.send(writer, value) if loader.respond_to?(writer)
       end
       loader.output = output if output # default: $stdout
       loader.run

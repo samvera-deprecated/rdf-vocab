@@ -5,6 +5,7 @@ RSpec.describe RDF::Vocab do
     before do
       allow(RDF::Vocab).to receive(:config) do
         { "test" => {
+            "title" => "For testing only",
             "class_name" => "Test",
             "source" => source, 
             "uri" => "http://purl.org/dc/terms/"
