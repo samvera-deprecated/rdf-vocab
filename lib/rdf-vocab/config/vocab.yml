@@ -32,6 +32,10 @@ acl:
   class_name: ACL
   uri: http://www.w3.org/ns/auth/acl#
   source: http://www.w3.org/ns/auth/acl
+dwc:
+  class_name: DWC
+  uri: http://rs.tdwg.org/dwc/terms/
+  source: dwcterms.rdf
 fcrepo4:
   class_name: Fcrepo4
   uri: http://fedora.info/definitions/v4/repository#
