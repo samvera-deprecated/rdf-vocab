@@ -16,3 +16,27 @@ namespace :vocab do
     end
   end
 end
+
+def vocab_classes(mod = RDF::Vocab, memo = {})
+  mod.constants(false).each do |const|
+    cls = mod.const_get(const)
+    if cls.is_a?(Class) && cls < RDF::Vocabulary
+      memo[cls.__name__] = cls
+    elsif cls.is_a?(Module)
+      vocab_classes(cls, memo)
+    end
+  end
+  memo
+end
+
+namespace :vocabs do
+  desc "List all vocabularies in this package and their URIs"
+  task :list do
+    vocabs = vocab_classes
+    spaces = vocabs.keys.map(&:size).max + 2
+    vocab_classes.keys.sort.each do |key|
+      print "%-#{spaces}s" % key
+      puts vocab_classes[key].to_uri.to_s
+    end
+  end
+end
