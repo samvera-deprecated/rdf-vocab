@@ -1,4 +1,5 @@
 require "yaml"
+require "uri"
 require "rdf/cli/vocab-loader"
 
 module RDF
@@ -12,6 +13,15 @@ module RDF
       loader = RDF::VocabularyLoader.new
       loader.module_name = "RDF::Vocab" unless config[vocab]["module_name"]
       config[vocab].each do |param, value|
+        if param == "source"
+          if URI.parse(value).scheme.nil? && !File.exists?(value)
+            if File.exists?(path = File.join(File.expand_path("../../sources", __FILE__), value))
+              value = path
+            else
+              raise IOError, "Source file not found."
+            end
+          end
+        end
         loader.send("#{param}=", value)
       end
       loader.output = output if output # default: $stdout
