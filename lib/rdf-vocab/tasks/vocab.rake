@@ -17,11 +17,13 @@ namespace :vocab do
   end
 end
 
+# Return a Hash of class_name => class for all
+# vocab classes in rdf-vocab
 def vocab_classes(mod = RDF::Vocab, memo = {})
   mod.constants(false).each do |const|
     cls = mod.const_get(const)
-    if cls.is_a?(Class) && cls < RDF::Vocabulary
-      memo[cls.__name__] = cls
+    if cls.is_a?(Class)
+      memo[cls.__name__] = cls if cls < RDF::Vocabulary
     elsif cls.is_a?(Module)
       vocab_classes(cls, memo)
     end
@@ -34,9 +36,9 @@ namespace :vocabs do
   task :list do
     vocabs = vocab_classes
     spaces = vocabs.keys.map(&:size).max + 2
-    vocab_classes.keys.sort.each do |key|
+    vocabs.keys.sort.each do |key|
       print "%-#{spaces}s" % key
-      puts vocab_classes[key].to_uri.to_s
+      puts vocabs[key].to_uri.to_s
     end
   end
 end
