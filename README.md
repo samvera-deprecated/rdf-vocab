@@ -12,6 +12,7 @@ See the list of rake tasks in the `vocab` namespace for specific vocabulary gene
 
 - RDF::Vocab::ACL - [Web Access Control](http://www.w3.org/wiki/WebAccessControl) (W3C)
 - RDF::Vocab::Bibframe - [Bibliographic Framework Initiative](http://bibframe.org/vocab/) (LoC)
+- RDF::Vocab::DataCite - [DataCite Ontology](http://purl.org/spar/datacite/)
 - RDF::Vocab::DWC - [Darwin Core](http://rs.tdwg.org/dwc/terms/)
 - RDF::Vocab::Fcrepo3 (module) - [Fedora Commons Repository 3](https://github.com/fcrepo3)*
 - RDF::Vocab::Fcrepo4 - [Fedora Commons Repository 4 Ontology](http://fedora.info/definitions/v4/repository)

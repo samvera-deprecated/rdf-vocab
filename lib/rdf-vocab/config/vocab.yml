@@ -32,6 +32,14 @@ acl:
   class_name: ACL
   uri: http://www.w3.org/ns/auth/acl#
   source: http://www.w3.org/ns/auth/acl
+bibframe:
+  class_name: Bibframe
+  uri: http://bibframe.org/vocab/
+  source: http://bibframe.org/vocab.rdf
+datacite:
+  class_name: DataCite
+  uri: http://purl.org/spar/datacite/
+  source: http://eelst.cs.unibo.it/apps/LODE/source?url=http://purl.org/spar/datacite
 dwc:
   class_name: DWC
   uri: http://rs.tdwg.org/dwc/terms/
@@ -81,7 +89,3 @@ prov:
   class_name: PROV
   uri: http://www.w3.org/ns/prov#
   source: http://www.w3.org/ns/prov
-bibframe:
-  class_name: Bibframe
-  uri: http://bibframe.org/vocab/
-  source: http://bibframe.org/vocab.rdf
