@@ -81,3 +81,7 @@ prov:
   class_name: PROV
   uri: http://www.w3.org/ns/prov#
   source: http://www.w3.org/ns/prov
+bibframe:
+  class_name: Bibframe
+  uri: http://bibframe.org/vocab/
+  source: http://bibframe.org/vocab.rdf
