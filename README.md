@@ -12,6 +12,7 @@ See the list of rake tasks in the `vocab` namespace for specific vocabulary gene
 
 - RDF::Vocab::ACL - [Web Access Control](http://www.w3.org/wiki/WebAccessControl) (W3C)
 - RDF::Vocab::Bibframe - [Bibliographic Framework Initiative](http://bibframe.org/vocab/) (LoC)
+- RDF::Vocab::CRM - [CIDOC Conceptual Reference Model (CRM); ISO 21127:2014](http://www.cidoc-crm.org/official_release_cidoc.html)
 - RDF::Vocab::DataCite - [DataCite Ontology](http://purl.org/spar/datacite/)
 - RDF::Vocab::DWC - [Darwin Core](http://rs.tdwg.org/dwc/terms/)
 - RDF::Vocab::EDM - [Europeana Data Model](http://labs.europeana.eu/api/linked-open-data/data-structure/)

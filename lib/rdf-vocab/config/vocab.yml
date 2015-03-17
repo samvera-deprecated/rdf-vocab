@@ -36,6 +36,10 @@ bibframe:
   class_name: Bibframe
   uri: http://bibframe.org/vocab/
   source: http://bibframe.org/vocab.rdf
+crm:
+  class_name: CRM
+  uri: http://www.cidoc-crm.org/cidoc-crm/
+  source: http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.0-draft-2015January.rdfs
 datacite:
   class_name: DataCite
   uri: http://purl.org/spar/datacite/
