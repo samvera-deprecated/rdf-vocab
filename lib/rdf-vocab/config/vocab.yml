@@ -44,6 +44,10 @@ dwc:
   class_name: DWC
   uri: http://rs.tdwg.org/dwc/terms/
   source: dwcterms.rdf
+edm:
+  class_name: EDM
+  uri: http://www.europeana.eu/schemas/edm/
+  source: http://www.europeana.eu/schemas/edm/rdf/edm.owl
 fcrepo4:
   class_name: Fcrepo4
   uri: http://fedora.info/definitions/v4/repository#
