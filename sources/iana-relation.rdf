@@ -1,0 +1,475 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dcterms="http://purl.org/dc/terms/">
+  <rdf:Description rdf:about="http://www.iana.org/assignments/relation/">
+    <dcterms:title xml:lang="en">Link Relations</dcterms:title>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-08-26</dcterms:created>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-01-21</dcterms:modified>
+    <dcterms:publisher rdf:resource="http://www.iana.org/"/>
+    <dcterms:contributor>Mark Nottingham, Julian Reschke, Jan Algermissen</dcterms:contributor>
+    <rdfs:seeAlso rdf:resource="http://www.iana.org/assignments/link-relations/link-relations.xhtml"/>
+  </rdf:Description>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/about">
+    <rdfs:label xml:lang="en">about</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a resource that is the subject of the link's context.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc6903, section 2"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/alternate">
+    <rdfs:label xml:lang="en">alternate</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a substitute for this context</rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://www.w3.org/TR/html5/links.html#link-type-alternate"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/appendix">
+    <rdfs:label xml:lang="en">appendix</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to an appendix.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://www.w3.org/TR/1999/REC-html401-19991224"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/archives">
+    <rdfs:label xml:lang="en">archives</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a collection of records, documents, or other materials of historical
+        interest.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://www.w3.org/TR/2011/WD-html5-20110113/links.html#rel-archives"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/author">
+    <rdfs:label xml:lang="en">author</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to the context's author.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://www.w3.org/TR/html5/links.html#link-type-author"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/bookmark">
+    <rdfs:label xml:lang="en">bookmark</rdfs:label>
+    <rdfs:comment xml:lang="en">Gives a permanent link to use for bookmarking purposes.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://www.w3.org/TR/html5/links.html#link-type-bookmark"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/canonical">
+    <rdfs:label xml:lang="en">canonical</rdfs:label>
+    <rdfs:comment xml:lang="en">Designates the preferred version of a resource (the IRI and its
+        contents).</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc6596"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/chapter">
+    <rdfs:label xml:lang="en">chapter</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a chapter in a collection of resources.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://www.w3.org/TR/1999/REC-html401-19991224"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/collection">
+    <rdfs:label xml:lang="en">collection</rdfs:label>
+    <rdfs:comment xml:lang="en">The target IRI points to a resource which represents the collection resource for
+        the context IRI.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc6573"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/contents">
+    <rdfs:label xml:lang="en">contents</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a table of contents.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://www.w3.org/TR/1999/REC-html401-19991224"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/copyright">
+    <rdfs:label xml:lang="en">copyright</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a copyright statement that applies to the link's context.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://www.w3.org/TR/1999/REC-html401-19991224"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/create-form">
+    <rdfs:label xml:lang="en">create-form</rdfs:label>
+    <rdfs:comment xml:lang="en">The target IRI points to a resource where a submission form can be
+        obtained.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc6861"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/current">
+    <rdfs:label xml:lang="en">current</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a resource containing the most recent item(s) in a collection of
+        resources.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc5005"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/derivedfrom">
+    <rdfs:label xml:lang="en">derivedfrom</rdfs:label>
+    <rdfs:comment xml:lang="en">The target IRI points to a resource from which this material was
+        derived.</rdfs:comment>
+    <rdfs:seeAlso rdf:about=""/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/describedby">
+    <rdfs:label xml:lang="en">describedby</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a resource providing information about the link's
+        context.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://www.w3.org/TR/powder-dr/#assoc-linking"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/describes">
+    <rdfs:label xml:lang="en">describes</rdfs:label>
+    <rdfs:comment xml:lang="en">The relationship A 'describes' B asserts that resource A provides a description
+        of resource B. There are no constraints on the format or representation of either A or B,
+        neither are there any further constraints on either resource.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc6892"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/disclosure">
+    <rdfs:label xml:lang="en">disclosure</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a list of patent disclosures made with respect to material for which
+        'disclosure' relation is specified.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc6579"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/duplicate">
+    <rdfs:label xml:lang="en">duplicate</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a resource whose available representations are byte-for-byte identical
+        with the corresponding representations of the context IRI.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc6249"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/edit">
+    <rdfs:label xml:lang="en">edit</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a resource that can be used to edit the link's context.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc5023"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/edit-form">
+    <rdfs:label xml:lang="en">edit-form</rdfs:label>
+    <rdfs:comment xml:lang="en">The target IRI points to a resource where a submission form for editing
+        associated resource can be obtained.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc6861"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/edit-media">
+    <rdfs:label xml:lang="en">edit-media</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a resource that can be used to edit media associated with the link's
+        context.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc5023"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/enclosure">
+    <rdfs:label xml:lang="en">enclosure</rdfs:label>
+    <rdfs:comment xml:lang="en">Identifies a related resource that is potentially large and might require special
+        handling.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc4287"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/first">
+    <rdfs:label xml:lang="en">first</rdfs:label>
+    <rdfs:comment xml:lang="en">An IRI that refers to the furthest preceding resource in a series of
+        resources.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc5988"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/glossary">
+    <rdfs:label xml:lang="en">glossary</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a glossary of terms.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://www.w3.org/TR/1999/REC-html401-19991224"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/help">
+    <rdfs:label xml:lang="en">help</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to context-sensitive help.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://www.w3.org/TR/html5/links.html#link-type-help"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/hosts">
+    <rdfs:label xml:lang="en">hosts</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a resource hosted by the server indicated by the link
+        context.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc6690"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/hub">
+    <rdfs:label xml:lang="en">hub</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a hub that enables registration for notification of updates to the
+        context.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://pubsubhubbub.googlecode.com"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/icon">
+    <rdfs:label xml:lang="en">icon</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to an icon representing the link's context.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://www.w3.org/TR/html5/links.html#link-type-icon"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/index">
+    <rdfs:label xml:lang="en">index</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to an index.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://www.w3.org/TR/1999/REC-html401-19991224"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/item">
+    <rdfs:label xml:lang="en">item</rdfs:label>
+    <rdfs:comment xml:lang="en">The target IRI points to a resource that is a member of the collection
+        represented by the context IRI.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc6573"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/last">
+    <rdfs:label xml:lang="en">last</rdfs:label>
+    <rdfs:comment xml:lang="en">An IRI that refers to the furthest following resource in a series of
+        resources.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc5988"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/latest-version">
+    <rdfs:label xml:lang="en">latest-version</rdfs:label>
+    <rdfs:comment xml:lang="en">Points to a resource containing the latest (e.g., current) version of the
+        context.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc5829"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/license">
+    <rdfs:label xml:lang="en">license</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a license associated with this context.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc4946"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/lrdd">
+    <rdfs:label xml:lang="en">lrdd</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to further information about the link's context, expressed as a LRDD
+        ("Link-based Resource Descriptor Document") resource. See 
+        for information about processing this relation type in host-meta documents. When used
+        elsewhere, it refers to additional links and other metadata. Multiple instances indicate
+        additional LRDD resources. LRDD resources MUST have an "application/xrd+xml" representation,
+        and MAY have others.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc6415"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/memento">
+    <rdfs:label xml:lang="en">memento</rdfs:label>
+    <rdfs:comment xml:lang="en">The Target IRI points to a Memento, a fixed resource that will not change state
+        anymore.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc7089"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/monitor">
+    <rdfs:label xml:lang="en">monitor</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a resource that can be used to monitor changes in an HTTP resource. </rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc5989"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/monitor-group">
+    <rdfs:label xml:lang="en">monitor-group</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a resource that can be used to monitor changes in a specified group of
+        HTTP resources. </rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc5989"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/next">
+    <rdfs:label xml:lang="en">next</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates that the link's context is a part of a series, and that the next in the
+        series is the link target. </rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://www.w3.org/TR/html5/links.html#link-type-next"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/next-archive">
+    <rdfs:label xml:lang="en">next-archive</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to the immediately following archive resource.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc5005"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/nofollow">
+    <rdfs:label xml:lang="en">nofollow</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates that the context&#x2019;s original author or publisher does not endorse the
+        link target.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://www.w3.org/TR/html5/links.html#link-type-nofollow"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/noreferrer">
+    <rdfs:label xml:lang="en">noreferrer</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates that no referrer information is to be leaked when following the
+        link.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://www.w3.org/TR/html5/links.html#link-type-noreferrer"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/original">
+    <rdfs:label xml:lang="en">original</rdfs:label>
+    <rdfs:comment xml:lang="en">The Target IRI points to an Original Resource.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc7089"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/payment">
+    <rdfs:label xml:lang="en">payment</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates a resource where payment is accepted.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc5988"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/predecessor-version">
+    <rdfs:label xml:lang="en">predecessor-version</rdfs:label>
+    <rdfs:comment xml:lang="en">Points to a resource containing the predecessor version in the version history. </rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc5829"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/prefetch">
+    <rdfs:label xml:lang="en">prefetch</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates that the link target should be preemptively cached.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://www.w3.org/TR/html5/links.html#link-type-prefetch"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/prev">
+    <rdfs:label xml:lang="en">prev</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates that the link's context is a part of a series, and that the previous in
+        the series is the link target. </rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://www.w3.org/TR/html5/links.html#link-type-prev"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/preview">
+    <rdfs:label xml:lang="en">preview</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a resource that provides a preview of the link's context.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc6903, section 3"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/previous">
+    <rdfs:label xml:lang="en">previous</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to the previous resource in an ordered series of resources. Synonym for
+        "prev".</rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://www.w3.org/TR/1999/REC-html401-19991224"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/prev-archive">
+    <rdfs:label xml:lang="en">prev-archive</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to the immediately preceding archive resource.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc5005"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/privacy-policy">
+    <rdfs:label xml:lang="en">privacy-policy</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a privacy policy associated with the link's context.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc6903, section 4"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/profile">
+    <rdfs:label xml:lang="en">profile</rdfs:label>
+    <rdfs:comment xml:lang="en">Identifying that a resource representation conforms to a certain profile, without
+        affecting the non-profile semantics of the resource representation.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc6906"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/related">
+    <rdfs:label xml:lang="en">related</rdfs:label>
+    <rdfs:comment xml:lang="en">Identifies a related resource.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc4287"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/replies">
+    <rdfs:label xml:lang="en">replies</rdfs:label>
+    <rdfs:comment xml:lang="en">Identifies a resource that is a reply to the context of the link. </rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc4685"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/search">
+    <rdfs:label xml:lang="en">search</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a resource that can be used to search through the link's context and
+        related resources.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://www.opensearch.org/Specifications/OpenSearch/1.1"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/section">
+    <rdfs:label xml:lang="en">section</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a section in a collection of resources.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://www.w3.org/TR/1999/REC-html401-19991224"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/self">
+    <rdfs:label xml:lang="en">self</rdfs:label>
+    <rdfs:comment xml:lang="en">Conveys an identifier for the link's context. </rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc4287"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/service">
+    <rdfs:label xml:lang="en">service</rdfs:label>
+    <rdfs:comment xml:lang="en">Indicates a URI that can be used to retrieve a service document.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc5023"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/start">
+    <rdfs:label xml:lang="en">start</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to the first resource in a collection of resources.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://www.w3.org/TR/1999/REC-html401-19991224"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/stylesheet">
+    <rdfs:label xml:lang="en">stylesheet</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a stylesheet.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://www.w3.org/TR/html5/links.html#link-type-stylesheet"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/subsection">
+    <rdfs:label xml:lang="en">subsection</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a resource serving as a subsection in a collection of
+        resources.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://www.w3.org/TR/1999/REC-html401-19991224"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/successor-version">
+    <rdfs:label xml:lang="en">successor-version</rdfs:label>
+    <rdfs:comment xml:lang="en">Points to a resource containing the successor version in the version history. </rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc5829"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/tag">
+    <rdfs:label xml:lang="en">tag</rdfs:label>
+    <rdfs:comment xml:lang="en">Gives a tag (identified by the given address) that applies to the current
+        document. </rdfs:comment>
+    <rdfs:seeAlso rdf:about="http://www.w3.org/TR/html5/links.html#link-type-tag"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/terms-of-service">
+    <rdfs:label xml:lang="en">terms-of-service</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to the terms of service associated with the link's context.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc6903, section 5"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/timegate">
+    <rdfs:label xml:lang="en">timegate</rdfs:label>
+    <rdfs:comment xml:lang="en">The Target IRI points to a TimeGate for an Original Resource.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc7089"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/timemap">
+    <rdfs:label xml:lang="en">timemap</rdfs:label>
+    <rdfs:comment xml:lang="en">The Target IRI points to a TimeMap for an Original Resource.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc7089"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/type">
+    <rdfs:label xml:lang="en">type</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a resource identifying the abstract semantic type of which the link's
+        context is considered to be an instance.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc6903, section 6"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/up">
+    <rdfs:label xml:lang="en">up</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a parent document in a hierarchy of documents. </rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc5988"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/version-history">
+    <rdfs:label xml:lang="en">version-history</rdfs:label>
+    <rdfs:comment xml:lang="en">Points to a resource containing the version history for the context. </rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc5829"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/via">
+    <rdfs:label xml:lang="en">via</rdfs:label>
+    <rdfs:comment xml:lang="en">Identifies a resource that is the source of the information in the link's
+        context. </rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc4287"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/working-copy">
+    <rdfs:label xml:lang="en">working-copy</rdfs:label>
+    <rdfs:comment xml:lang="en">Points to a working copy for this resource.</rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc5829"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.iana.org/assignments/relation/working-copy-of">
+    <rdfs:label xml:lang="en">working-copy-of</rdfs:label>
+    <rdfs:comment xml:lang="en">Points to the versioned resource from which this working copy was obtained. </rdfs:comment>
+    <rdfs:seeAlso rdf:about="rfc5829"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/relation/"/>
+  </rdf:Property>
+</rdf:RDF>

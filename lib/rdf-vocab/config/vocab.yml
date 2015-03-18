@@ -56,6 +56,16 @@ fcrepo4:
   class_name: Fcrepo4
   uri: http://fedora.info/definitions/v4/repository#
   source: http://fedora.info/definitions/v4/2015/02/04/repository
+# IANA publishes the Link Relation Types as an XML file, but not as RDF.
+# See: http://www.iana.org/assignments/link-relations/link-relations.xml
+# In order to generate an RDF representation of this file, the XSLT file at
+# ./sources/iana-relation.xsl is applied, the result of which is stored
+# in ./sources/iana-relation.rdf It is from that file that the Ruby
+# representation is generated.
+iana:
+  class_name: IANA
+  uri: http://www.iana.org/assignments/relation/
+  source: iana-relation.rdf
 identifiers:
   class_name: Identifiers
   uri: http://id.loc.gov/vocabulary/identifiers/

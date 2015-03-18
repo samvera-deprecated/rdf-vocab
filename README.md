@@ -18,6 +18,7 @@ See the list of rake tasks in the `vocab` namespace for specific vocabulary gene
 - RDF::Vocab::EDM - [Europeana Data Model](http://labs.europeana.eu/api/linked-open-data/data-structure/)
 - RDF::Vocab::Fcrepo3 (module) - [Fedora Commons Repository 3](https://github.com/fcrepo3)*
 - RDF::Vocab::Fcrepo4 - [Fedora Commons Repository 4 Ontology](http://fedora.info/definitions/v4/repository)
+- RDF::Vocab::IANA - [Link Relations](http://www.iana.org/assignments/link-relations/link-relations.xhtml) (IANA)
 - RDF::Vocab::Identifiers - [Standard Identifiers Scheme](http://id.loc.gov/vocabulary/identifiers.html) (LoC)
 - RDF::Vocab::LDP - [Linked Data Platform](http://www.w3.org/TR/ldp/) (W3C)
 - RDF::Vocab::MADS - [Metadata Authority Description Schema](http://www.loc.gov/standards/mads/) (LoC) 
