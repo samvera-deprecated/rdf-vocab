@@ -1,6 +1,8 @@
 RDF::Vocab
 ==========
 
+**This project has moved to https://github.com/ruby-rdf/rdf-vocab.**
+
 A library of RDF vocabularies generated from RDF schema and web ontologies (OWL) using the ruby-rdf vocab-loader.
 
 [![Gem Version](https://badge.fury.io/rb/rdf-vocab.svg)](http://badge.fury.io/rb/rdf-vocab)
