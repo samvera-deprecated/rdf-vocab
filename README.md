@@ -3,10 +3,9 @@ RDF::Vocab
 
 **This project has moved to https://github.com/ruby-rdf/rdf-vocab.**
 
-A library of RDF vocabularies generated from RDF schema and web ontologies (OWL) using the ruby-rdf vocab-loader.
+NOTE: rdf-vocab versions <= 0.7.0 are not compatible with `linkeddata` >= 1.1.11.
 
-[![Gem Version](https://badge.fury.io/rb/rdf-vocab.svg)](http://badge.fury.io/rb/rdf-vocab)
-[![Build Status](https://travis-ci.org/projecthydra-labs/rdf-vocab.svg?branch=master)](https://travis-ci.org/projecthydra-labs/rdf-vocab)
+A library of RDF vocabularies generated from RDF schema and web ontologies (OWL) using the ruby-rdf vocab-loader.
 
 See the list of rake tasks in the `vocab` namespace for specific vocabulary generators.
 
